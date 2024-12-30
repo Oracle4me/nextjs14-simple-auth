@@ -6,7 +6,7 @@ Ini adalah sistem autentikasi sederhana yang dibangun dengan [Next.js 14](https:
 
 Ikuti petunjuk di bawah ini untuk menjalankan proyek ini secara lokal.
 
-### 1. Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Oracle4me/nextjs14-simple-auth.git
