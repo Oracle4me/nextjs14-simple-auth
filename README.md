@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simple Auth dengan Next.js 14 dan NextAuth
 
-## Getting Started
+Ini adalah sistem autentikasi sederhana yang dibangun dengan [Next.js 14](https://nextjs.org/) dan [NextAuth.js](https://next-auth.js.org/). Aplikasi ini menyediakan solusi autentikasi yang mudah digunakan untuk aplikasi Next.js, dengan berbagai penyedia autentikasi (Google, GitHub, Email).
 
-First, run the development server:
+## Memulai
+
+Ikuti petunjuk di bawah ini untuk menjalankan proyek ini secara lokal.
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Oracle4me/nextjs14-simple-auth.git
+cd nextjs14-simple-auth
+
+## Langkah-Langkah
+
+Pertama, jalankan untuk server pengembang:
 
 ```bash
 npm run dev
-# or
+# atau
 yarn dev
-# or
+# atau
 pnpm dev
-# or
+# atau
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Atur Variable Lingkungan
+Buat file .env.local di root proyek 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+.env
+```
+DATABASE_URL= your_database
+GOOGLE_ID = google_id
+GOOGLE_CLIENT_SECRET = Oauth Google
+GITHUB_ID = id
+GITHUB_CLIENT_SECRET = Oauth Github
+RESEND_API_KEY = resend_api
+PUBLIC_API_ROUTE = "http://localhost:3000
+```
 
-## Learn More
+.env.local
+```
+NEXTAUTH_SECRET = 
+GITHUB_SECRET = 
+GITHUB_ID = 
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
